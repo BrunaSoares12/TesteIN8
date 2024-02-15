@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+.home{
+  height: 1000px;
+  background-color: blue;
+}
+
+.register{
+  height: 1000px;
+  background-color: green;
+}
+.aboutMe{
+  height: 1000px;
+  background-color: blueviolet;
+}
+.listNew{
+  height: 1000px;
+  background-color: rgb(105, 255, 218);
+}
