@@ -1,4 +1,11 @@
 .list{
     width: 700px;
-    background-color: red;
+    background-image: url("../images/rodape-desktop.jpg");
+}
+p{
+    font-family: Roboto Light;
+    color: white;
+}
+.paragrafos{
+    padding-top: 50px;
 }

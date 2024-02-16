@@ -1,4 +1,9 @@
 .aboutMe{
     height: 700px;
-    background-color: blueviolet;
+}
+.tituloCadastro{
+    font-family: Helvetica 25 UltraLight Regular;
+    font-size: 25px;
+    color: white;
+    
 }

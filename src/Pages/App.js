@@ -22,12 +22,12 @@ function App() {
   return (
     <div className="App">
       <div>
-        <ul>
+        <ul className="navbar">
           <li onClick={() => scrollToSection(home)} className="link">
             Home
           </li>
           <li onClick={() => scrollToSection(aboutMe)} className="link">
-            Sobre Mim
+            Lista de Cadastro
           </li>
           <li onClick={() => scrollToSection(register)} className="link">
             Contatos

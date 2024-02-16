@@ -1,4 +1,16 @@
 .register{
     height: 700px;
-    background-color: green;
+    background-color: white;
 }
+.tabela{
+    padding-top: 50px;
+}
+.titulo{
+    font-family: Helvetica 25 UltraLight Regular;
+    color:#29abe2;
+}
+ .linha2, .linha3, .linha4{
+    padding-top: 10px;
+
+}
+

@@ -1,21 +1,23 @@
 .App {
   text-align: center;
 }
-
+.navbar{
+  background: transparent;
+  position: absolute;
+  display: inline-block;
+}
 .home{
   height: 1000px;
-  background-color: blue;
+  background-image: url("./images/index-image.jpg");
 }
-
 .register{
   height: 1000px;
-  background-color: green;
 }
 .aboutMe{
   height: 1000px;
-  background-color: blueviolet;
+  background-color: #29abe2;
 }
 .listNew{
-  height: 1000px;
-  background-color: rgb(105, 255, 218);
+  height: 250px;
+  background-image: url("./images/rodape-desktop.jpg");
 }
