@@ -22,76 +22,30 @@ export default function AboutMe() {
     }
     const novaLista = [novaPessoa, ...ListaDePessoas]
     setListaDePessoas(novaLista)
-    localStorage.setItem("Person", JSON.stringify(novaLista));
+    localStorage.setItem("Person", JSON.stringify(novaLista))    
   }
   
   return (
-    <div>
+    <div className='content'>
       <div className='Cadastro'>
         <h1>Cadastro</h1>
       </div>
       <div className='Linhas'>
-        <div>
-          <FormControl variant="standard">
-            <InputLabel 
-              htmlFor="component-helper"
-              sx={{color: 'white'}}   
-            >
-              Nome
-            </InputLabel>
-            <Input
-              id="component-helper"
-              aria-describedby="component-helper-text"
-              className='customInput'
-              onChange={(event)=> setName(event.target.value)}
-            />
-          </FormControl>
+        <div className='TextInput'>
+        <p>Name</p>
+        <input onChange={(event)=> setName(event.target.value)}/>
         </div>
-        <div className='listadeCadastro2'>
-          <FormControl variant="standard">
-            <InputLabel 
-            htmlFor="component-helper"
-            sx={{color: 'white'}}  
-
-            >Email
-            </InputLabel>
-            <Input
-              id="component-helper"
-              aria-describedby="component-helper-text"
-              className='customInput'
-              onChange={(event)=> setEmail(event.target.value)}
-              
-            />
-          </FormControl>
+        <div className='TextInput'>
+        <p>Email</p>
+        <input onChange={(event)=> setEmail(event.target.value)}/>
         </div>
-        <div className='listadeCadastro3'>
-          <FormControl variant="standard">
-            <InputLabel 
-            htmlFor="component-helper"
-            sx={{color: 'white'}}  
-            
-            >Nascimento
-            </InputLabel>
-            <Input
-              id="component-helper"
-              aria-describedby="component-helper-text"
-              className='customInput'
-              onChange={(event)=> setNascimento(event.target.value)} 
-            />
-          </FormControl>
+        <div className='TextInput'>
+        <p>Nascimento</p>
+        <input onChange={(event)=> setNascimento(event.target.value)} />
         </div>
-        <div className='listadeCadastro4'>
-          <FormControl variant="standard">
-            <InputLabel htmlFor="component-helper"
-            sx={{color: 'white'}}  
-            >Telefone</InputLabel>
-            <Input
-              id="component-helper"
-              aria-describedby="component-helper-text"
-              className='customInput'
-              onChange={(event)=> setTelefone(event.target.value)}
-            />
-          </FormControl>
+        <div className='TextInput'>
+        <p>Telefone</p>
+        <input onChange={(event)=> setTelefone(event.target.value)}/>
         </div>
       </div>
       <div className='botton'>

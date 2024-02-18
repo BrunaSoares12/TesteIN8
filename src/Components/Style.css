@@ -1,9 +1,11 @@
 .table-container{
     width: 100%;
-    height: auto;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: scroll;
+    padding: 10px;
 }
 .table-style{
     width: 50%;

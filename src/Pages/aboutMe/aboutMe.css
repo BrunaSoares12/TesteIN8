@@ -2,28 +2,44 @@
     font-family: "Helvetica 25 UltraLight Regular";
     src: url('../../../fonts/HelveticaUltraLt_0.ttf');
   }
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.content input {
+    box-shadow: 0 0 0 0;
+    border: 0 solid;
+    border-bottom: 1px solid #ffffff;
+    outline: 0;
+    background-color: transparent;
+    width: 30vw;
+    color: #ffffff;
+}
+.Linhas {
+    margin: 50px;
+}
+.TextInput {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
 .aboutMe{
     height: 700px;
 }
 .Cadastro{
-    left: 30%;
-    padding-top: 2%;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: "Helvetica 25 UltraLight Regular";
     font-size: 40px;
-}
-.Linhas{
-    position: absolute;
-    left: 35%;
 }
 .customInput {
     width: 300%; 
 }
 .botton button {
-    position: absolute;
-    top: 165%; 
-    left: 828px; 
-    padding: 5px 20px;
     background-color: #012d51;
     color: white;
     border: none;
@@ -31,9 +47,6 @@
     cursor: pointer;
   }
 
-.aboutMe{
-    height: 700px;
-}
 
 
   
