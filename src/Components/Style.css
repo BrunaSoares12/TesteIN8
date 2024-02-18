@@ -1,0 +1,21 @@
+.table-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.table-style{
+    width: 50%;
+    max-height: 70%;
+}
+.table-cell{
+    border-right: 1px  solid;
+    border-bottom: 1px  solid;
+    border-color: #29aae3;
+    padding: 2%;
+}
+.table-cell2{
+    border-bottom: 1px  solid;
+    border-color: #29aae3;
+}

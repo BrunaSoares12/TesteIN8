@@ -1,9 +1,39 @@
+@font-face {
+    font-family: "Helvetica 25 UltraLight Regular";
+    src: url('../../../fonts/HelveticaUltraLt_0.ttf');
+  }
 .aboutMe{
     height: 700px;
 }
-.tituloCadastro{
-    font-family: Helvetica 25 UltraLight Regular;
-    font-size: 25px;
+.Cadastro{
+    left: 30%;
+    padding-top: 2%;
     color: white;
-    
+    font-family: "Helvetica 25 UltraLight Regular";
+    font-size: 40px;
 }
+.Linhas{
+    position: absolute;
+    left: 35%;
+}
+.customInput {
+    width: 300%; 
+}
+.botton button {
+    position: absolute;
+    top: 165%; 
+    left: 828px; 
+    padding: 5px 20px;
+    background-color: #012d51;
+    color: white;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+  }
+
+.aboutMe{
+    height: 700px;
+}
+
+
+  

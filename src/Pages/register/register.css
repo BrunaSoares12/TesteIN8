@@ -5,9 +5,10 @@
 .tabela{
     padding-top: 50px;
 }
-.titulo{
+.h1{
     font-family: Helvetica 25 UltraLight Regular;
     color:#29abe2;
+    padding-bottom: 4%;
 }
  .linha2, .linha3, .linha4{
     padding-top: 10px;

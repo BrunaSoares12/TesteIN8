@@ -1,23 +1,64 @@
 .App {
   text-align: center;
 }
-.navbar{
-  background: transparent;
-  position: absolute;
-  display: inline-block;
+
+.navbar {
+  width: 20%;
+  margin: 0;
+  right: 20%;
+  padding-top: 3%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  list-style-type: none;
+  color: white;
+  background-color: transparent;
+  font-family: "Roboto-Regular";
+  justify-content: space-evenly;
+  border-bottom: 2px solid transparent; 
+  transition: border-bottom 0.3s ease; 
 }
-.home{
+
+.navbar li {
+  margin: 0;
+}
+.navbar .link {
+  margin: 10px 0;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+.navbar .underline {
+  width: 0;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.navbar .link:hover .underline {
+  width: 100%;
+}
+
+.home {
   height: 1000px;
   background-image: url("./images/index-image.jpg");
 }
-.register{
+
+.register {
   height: 1000px;
 }
-.aboutMe{
+
+.aboutMe {
   height: 1000px;
   background-color: #29abe2;
 }
-.listNew{
+
+.listNew {
   height: 250px;
   background-image: url("./images/rodape-desktop.jpg");
 }

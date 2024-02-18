@@ -1,57 +1,55 @@
-import { useRef } from "react"
-import './App.css'
-import Home from './home/home'
-import AboutMe from './aboutMe/aboutMe'
-import List from './list/list'
-import Register from './register/register'
-function App() {
+import { useRef } from "react";
+import './App.css';
+import Home from './home/home';
+import AboutMe from './aboutMe/aboutMe';
+import List from './list/list';
+import Register from './register/register';
 
-  const home = useRef(null)
-  const aboutMe = useRef(null)
-  const register = useRef(null)
-  const list = useRef(null)
+function App() {
+  const home = useRef(null);
+  const aboutMe = useRef(null);
+  const register = useRef(null);
+  const list = useRef(null);
 
   const scrollToSection = (elementRef) => {
-    console.log(elementRef)
     window.scrollTo({
       top: elementRef.current.offsetTop,
       behavior: "smooth",
-    })
-  }
+    });
+  };
 
   return (
     <div className="App">
       <div>
         <ul className="navbar">
-          <li onClick={() => scrollToSection(home)} className="link">
-            Home
-          </li>
           <li onClick={() => scrollToSection(aboutMe)} className="link">
-            Lista de Cadastro
+            Cadastro
+            <div className="underline"></div>
           </li>
           <li onClick={() => scrollToSection(register)} className="link">
-            Contatos
+            Lista
+            <div className="underline"></div>
           </li>
           <li onClick={() => scrollToSection(list)} className="link">
-            Lista
+            Sobre mim
+            <div className="underline"></div>
           </li>
         </ul>
       </div>
-      <div className="home" ref={home}>    
+      <div className="home" ref={home}>
         <Home />
       </div>
-      <div  className="aboutMe" ref={aboutMe}>
-      <AboutMe />
-    </div> 
-    <div className="register" ref={register}>
-    <Register/>
+      <div className="aboutMe" ref={aboutMe}>
+        <AboutMe />
+      </div>
+      <div className="register" ref={register}>
+        <Register />
+      </div>
+      <div className="listNew" ref={list}>
+        <List />
+      </div>
     </div>
-    <div className="listNew" ref={list}>
-     <List/>
-    </div>
-    </div>
-    
-  )
+  );
 }
 
-export default App
+export default App;
