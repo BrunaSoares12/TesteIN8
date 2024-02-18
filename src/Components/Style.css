@@ -1,4 +1,4 @@
-.table-container{
+.Tabela{
     width: 100%;
     height: 500px;
     display: flex;
@@ -7,17 +7,17 @@
     overflow: scroll;
     padding: 10px;
 }
-.table-style{
+.Tabela-estilo{
     width: 50%;
     max-height: 70%;
 }
-.table-cell{
+.tabela-contatos{
     border-right: 1px  solid;
     border-bottom: 1px  solid;
     border-color: #29aae3;
     padding: 2%;
 }
-.table-cell2{
+.tabela-contatos2{
     border-bottom: 1px  solid;
     border-color: #29aae3;
 }

@@ -1,4 +1,4 @@
-import './list.css'
+import './SobreMim.css'
 export default function list() {
     
     return (

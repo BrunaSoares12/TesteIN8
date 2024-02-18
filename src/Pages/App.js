@@ -1,18 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './App.css';
 import Home from './home/home';
-import AboutMe from './aboutMe/aboutMe';
-import List from './list/list';
-import Register from './register/register';
+import Cadastro from './Cadastro/Cadastro';
+import SobreMim from './SobreMim/SobreMim';
+import ListaDeContatos from './ListaDeContatos/ListaDeContatos';
 import { isVisible } from '@testing-library/user-event/dist/utils';
 
 function App() {
   const [isMobile, setIsMobile] = useState(false)
   const [isVisible, setIsVisible] = useState(true)
   const home = useRef(null);
-  const aboutMe = useRef(null);
-  const register = useRef(null);
-  const list = useRef(null);
+  const cadastro = useRef(null);
+  const listaDeContatos = useRef(null);
+  const sobreMim = useRef(null);
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -49,15 +49,15 @@ function App() {
         {isVisible && (
           <div class="navbar-links" id="navbarLinks">
             <ul className='link-list navbar-links'>
-              <li onClick={() => scrollToSection(aboutMe)} className="link">
+              <li onClick={() => scrollToSection(cadastro)} className="link">
                 Cadastro
                 <div className="underline"></div>
               </li>
-              <li onClick={() => scrollToSection(register)} className="link">
+              <li onClick={() => scrollToSection(listaDeContatos)} className="link">
                 Lista
                 <div className="underline"></div>
               </li>
-              <li onClick={() => scrollToSection(list)} className="link">
+              <li onClick={() => scrollToSection(SobreMim)} className="link">
                 Sobre mim
                 <div className="underline"></div>
               </li>
@@ -69,14 +69,14 @@ function App() {
         <div className="home" ref={home}>
           <Home />
         </div>
-        <div className="aboutMe" ref={aboutMe}>
-          <AboutMe />
+        <div className="aboutMe" ref={cadastro}>
+          <Cadastro />
         </div>
-        <div className="register" ref={register}>
-          <Register />
+        <div className="listadecontatos" ref={listaDeContatos}>
+          <ListaDeContatos />
         </div>
-        <div className="listNew" ref={list}>
-          <List />
+        <div className="listNew" ref={sobreMim}>
+          <SobreMim />
         </div>
     </div>
   );

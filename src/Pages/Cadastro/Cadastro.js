@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './aboutMe.css';
+import './Cadastro.css';
 import Input from '@mui/material/Input';
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
